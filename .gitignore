@@ -1,0 +1,38 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 构建产物
+dist/
+dist-ssr/
+*.local
+
+# 环境变量（只提交 .env.example）
+.env
+.env.*
+!.env.example
+
+# 运行时产物
+logs/
+*.log
+npm-debug.log*
+coverage/
+
+# 用户上传文件（不进球仓库）
+server/uploads/
+server/.tmp-test-uploads/
+
+# 发布临时包
+.deploy-tmp/
+
+# 压测产物（夹具里有签好的 token，不复用别处的凭据但不该进仓库）
+server/scripts/bench/fixture.json
+server/scripts/bench/results-*.json
+
+# 编辑器
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,78 @@
+/**
+ * 设计变量
+ *
+ * 全部集中在这里，组件里不出现裸色值 —— 后面要换主题（或做暗色）
+ * 只改这个文件，不用满项目搜 #fff。
+ *
+ * 配色原则（刻意为之，不是随手选的）：
+ *
+ *   1. **不用彩色品牌色**。主色就是近黑，按钮黑底白字。
+ *      高饱和的靛蓝/紫渐变是模板感最强的来源 —— 绝大多数自动生成的界面
+ *      都会加一个"品牌紫"，于是所有页面看起来都像同一套东西。
+ *   2. **底色带一点暖**（#f2f1ee 而不是 #f7f8fb 的冷蓝灰）。
+ *      冷灰配白卡片会显得像 SaaS 后台；暖灰更像素描纸或编辑器。
+ *   3. **只保留两个语义色**：危险红、在线绿。其余全部靠灰阶与字重区分。
+ *      颜色越少，界面越安静，信息密度反而显得更高。
+ *   4. **靠 1px 线分区，不靠阴影**。阴影只留给真正浮起来的层（弹窗、提示条）。
+ */
+:root {
+  /* 表面 */
+  --bg: #f2f1ee;
+  --surface: #ffffff;
+  --surface-2: #f8f7f5;
+  --surface-3: #eceae5;
+  --rail: #1b1b1a;
+  --rail-hover: #2c2c29;
+
+  /* 文字 */
+  --text: #191918;
+  --text-2: #6a6863;
+  --text-3: #a3a099;
+  --text-on-dark: #f2f1ee;
+  --text-on-dark-2: #86847e;
+
+  /* 线 */
+  --border: #e6e4df;
+  --border-strong: #d4d1ca;
+
+  /* 主色 = 近黑 */
+  --accent: #1b1b1a;
+  --accent-hover: #000000;
+  --accent-soft: #f0eeea;
+  --accent-ring: rgba(27, 27, 26, 0.12);
+
+  /* 语义色 */
+  --online: #4a8f63;
+  --danger: #c0413b;
+  --danger-soft: #fbeeed;
+  --warn: #9a6a20;
+
+  /* 气泡 */
+  --bubble-mine: #232322;
+  --bubble-theirs: #ffffff;
+  --bubble-mine-text: #f4f3f0;
+
+  /* 形状。圆角整体比"卡片式"设计小一档：
+     大圆角 + 大留白是移动端 2019 年的语汇，桌面工具用 6–10px 更利落 */
+  --r-sm: 6px;
+  --r-md: 9px;
+  --r-lg: 12px;
+  --shadow-1: 0 1px 1px rgba(28, 26, 22, 0.04);
+  --shadow-2: 0 6px 20px rgba(28, 26, 22, 0.1);
+  --shadow-3: 0 16px 40px rgba(28, 26, 22, 0.14);
+
+  /* 尺寸 */
+  --rail-w: 68px;
+  --list-w: 300px;
+  --header-h: 56px;
+
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+
+  /* 只用在时间戳、计数这类"数据"上。
+     等宽数字不会跳动，而且能给纯灰的界面加一点手工排版的质感 */
+  --font-mono: 'SF Mono', 'JetBrains Mono', 'Cascadia Mono', 'DejaVu Sans Mono', Consolas,
+    'Courier New', monospace;
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}

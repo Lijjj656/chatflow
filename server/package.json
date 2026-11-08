@@ -1,0 +1,41 @@
+{
+  "name": "chatflow-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ChatFlow 实时即时通讯系统 - 后端",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "smoke": "node scripts/e2e/smoke.mjs",
+    "bench:prepare": "node scripts/bench/prepare.mjs",
+    "bench:http": "node scripts/bench/http.mjs",
+    "bench:ws": "node scripts/bench/ws.mjs",
+    "bench:sql": "node scripts/bench/sql.mjs",
+    "db:init": "node scripts/init-db.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.5.0",
+    "pg": "^8.12.0",
+    "socket.io": "^4.7.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.4",
+    "supertest": "^7.0.0",
+    "vitest": "^2.0.5"
+  }
+}
