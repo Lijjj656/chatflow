@@ -171,7 +171,7 @@ npm run dev                    # node --watch，改代码自动重启
 ### 4. 跑测试
 
 ```bash
-npm test                       # 后端 188 项（Vitest + Supertest）
+npm test                       # 后端 191 项（Vitest + Supertest）
 npm run smoke                  # 端到端冒烟 24 步（需先启动后端，默认打 3200）
 ```
 
