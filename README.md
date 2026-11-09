@@ -2,8 +2,11 @@
 
 一个具备真实业务逻辑的 Web 实时即时通讯系统。全栈手写，用于展示 Node.js 全栈工程能力。
 
-> **在线演示**：<http://47.111.223.71> — 演示账号 `alin@chatflow.dev` / `chatflow2026`
-> （另有 zhou@ / chen@ / shen@ 同密码，两个窗口分别登录即可看到实时互发与已读）
+> **在线演示**：<http://47.111.223.71>
+>
+> 演示账号（密码均为 `chatflow2026`）：`alin@chatflow.dev`（林晚）· `zhou@chatflow.dev`（周叙）· `chen@chatflow.dev`（陈默）· `shen@chatflow.dev`（沈迟）
+>
+> 要验证实时收发与已读回执：用两个浏览器窗口（或一个普通窗口 + 一个隐身窗口）分别登录林晚和周叙，互发消息即可。
 >
 > **设计文档**：[`docs/01-架构设计.md`](docs/01-架构设计.md) · **环境搭建**：[`docs/02-环境搭建.md`](docs/02-环境搭建.md) · **接口文档**：[`docs/03-API.md`](docs/03-API.md) · **Socket 协议**：[`docs/04-Socket协议.md`](docs/04-Socket协议.md) · **在线状态**：[`docs/05-Redis在线状态.md`](docs/05-Redis在线状态.md) · **离线消息与已读**：[`docs/06-离线消息与已读状态.md`](docs/06-离线消息与已读状态.md) · **前端设计**：[`docs/07-前端设计.md`](docs/07-前端设计.md) · **测试报告**：[`docs/08-功能与性能测试.md`](docs/08-功能与性能测试.md) · **部署运维**：[`docs/09-部署运维.md`](docs/09-部署运维.md)
 
