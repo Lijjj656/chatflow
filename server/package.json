@@ -2,6 +2,7 @@
   "name": "chatflow-server",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "description": "ChatFlow 实时即时通讯系统 - 后端",
   "engines": {
